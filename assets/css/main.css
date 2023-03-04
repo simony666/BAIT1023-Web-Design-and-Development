@@ -1,0 +1,60 @@
+html{
+    background-color: rgba(214, 214, 214, 0.8);
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+}
+
+header{
+    height: 10%;
+}
+
+.header{
+    background-color: rgba(113, 109, 111, 0.8);
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.header .left{
+    float: left;
+    margin: 1em;
+    height: 100%;
+}
+.header .right{
+    float: right;
+}
+
+.header .right, .nav, .nav-item,.nav-item a{
+    height: 100%;
+}
+.nav-item{
+    float: left;
+}
+.nav-item a{
+    display: block;
+    padding: 2em;
+    color: white;
+}
+.nav-item.active{
+    color: white;
+    background-color: rgb(123, 230, 123);
+}
+.nav-item :hover{
+    color: white;
+    background-color: rgb(1, 253, 1);
+}
+.container{
+    overflow:auto;
+    width: 80%;
+    background-color: white;
+    height: 90%;
+    margin: auto;
+}

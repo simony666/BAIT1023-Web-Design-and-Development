@@ -7,6 +7,9 @@
     <title>Product</title>
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+    <script src="./assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/product.js"></script>
 </head>
 <body>
     <header>
@@ -27,87 +30,101 @@
     </header>
     
     <div class="container">
+        <div class="cart-header">
+            <div class="cart-header-container">
+                <button class="price-btn"><i class="fa-solid fa-cart-shopping"></i>RM100</button>
+            </div>
+        </div>
+        <hr>
         <div class="products">
             <div class="product">
-                <h1 class="product_title">Item1</h1>
-                <div class="product_img_container">
-                    <img src="./assets/img/empty.png" alt="" class="product_img">
+                <h1 class="product-title">Item1</h1>
+                <div class="product-img-container">
+                    <img src="./assets/img/empty.png" alt="" class="product-img">
                 </div>
-                <span class="product_price">RM10</span>
-                <div class="product_btn_container">
-                    <button class="cart_btn product_btn">Add To Cart</button>
-                    <button class="buy_btn product_btn">Buy</button></div>
+                <span class="product-price">RM10</span>
+                <div class="product-btn-container">
+                    <button class="cart-btn product-btn">Add To Cart</button>
+                    <button class="buy-btn product-btn">Buy</button>
                 </div>
+            </div>
             <div class="product">
-                <h1 class="product_title">Item2</h1>
-                <div class="product_img_container">
-                    <img src="./assets/img/empty.png" alt="" class="product_img">
+                <h1 class="product-title">Item2</h1>
+                <div class="product-img-container">
+                    <img src="./assets/img/empty.png" alt="" class="product-img">
                 </div>
-                <span class="product_price">RM10</span>
-                <div class="product_btn_container">
-                    <button class="cart_btn product_btn">Add To Cart</button>
-                    <button class="buy_btn product_btn">Buy</button></div>
+                <span class="product-price">RM10</span>
+                <div class="product-btn-container">
+                    <button class="cart-btn product-btn">Add To Cart</button>
+                    <button class="buy-btn product-btn">Buy</button>
                 </div>
+            </div>
             <div class="product">
-                <h1 class="product_title">Item3</h1>
-                <div class="product_img_container">
-                    <img src="./assets/img/empty.png" alt="" class="product_img">
+                <h1 class="product-title">Item3</h1>
+                <div class="product-img-container">
+                    <img src="./assets/img/empty.png" alt="" class="product-img">
                 </div>
-                <span class="product_price">RM10</span>
-                <div class="product_btn_container">
-                    <button class="cart_btn product_btn">Add To Cart</button>
-                    <button class="buy_btn product_btn">Buy</button></div>
+                <span class="product-price">RM10</span>
+                <div class="product-btn-container">
+                    <button class="cart-btn product-btn">Add To Cart</button>
+                    <button class="buy-btn product-btn">Buy</button>
                 </div>
+            </div>
             <div class="product">
-                <h1 class="product_title">Item4</h1>
-                <div class="product_img_container">
-                    <img src="./assets/img/empty.png" alt="" class="product_img">
+                <h1 class="product-title">Item4</h1>
+                <div class="product-img-container">
+                    <img src="./assets/img/empty.png" alt="" class="product-img">
                 </div>
-                <span class="product_price">RM10</span>
-                <div class="product_btn_container">
-                    <button class="cart_btn product_btn">Add To Cart</button>
-                    <button class="buy_btn product_btn">Buy</button></div>
+                <span class="product-price">RM10</span>
+                <div class="product-btn-container">
+                    <button class="cart-btn product-btn">Add To Cart</button>
+                    <button class="buy-btn product-btn">Buy</button>
                 </div>
+            </div>
             <div class="product">
-                <h1 class="product_title">Item5</h1>
-                <div class="product_img_container">
-                    <img src="./assets/img/empty.png" alt="" class="product_img">
+                <h1 class="product-title">Item5</h1>
+                <div class="product-img-container">
+                    <img src="./assets/img/empty.png" alt="" class="product-img">
                 </div>
-                <span class="product_price">RM10</span>
-                <div class="product_btn_container">
-                    <button class="cart_btn product_btn">Add To Cart</button>
-                    <button class="buy_btn product_btn">Buy</button></div>
+                <span class="product-price">RM10</span>
+                <div class="product-btn-container">
+                    <button class="cart-btn product-btn">Add To Cart</button>
+                    <button class="buy-btn product-btn">Buy</button>
                 </div>
+            </div>
             <div class="product">
-                <h1 class="product_title">Item6</h1>
-                <div class="product_img_container">
-                    <img src="./assets/img/empty.png" alt="" class="product_img">
+                <h1 class="product-title">Item6</h1>
+                <div class="product-img-container">
+                    <img src="./assets/img/empty.png" alt="" class="product-img">
                 </div>
-                <span class="product_price">RM10</span>
-                <div class="product_btn_container">
-                    <button class="cart_btn product_btn">Add To Cart</button>
-                    <button class="buy_btn product_btn">Buy</button></div>
+                <span class="product-price">RM10</span>
+                <div class="product-btn-container">
+                    <button class="cart-btn product-btn">Add To Cart</button>
+                    <button class="buy-btn product-btn">Buy</button>
                 </div>
+            </div>
             <div class="product">
-                <h1 class="product_title">Item7</h1>
-                <div class="product_img_container">
-                    <img src="./assets/img/empty.png" alt="" class="product_img">
+                <h1 class="product-title">Item7</h1>
+                <div class="product-img-container">
+                    <img src="./assets/img/empty.png" alt="" class="product-img">
                 </div>
-                <span class="product_price">RM10</span>
-                <div class="product_btn_container">
-                    <button class="cart_btn product_btn">Add To Cart</button>
-                    <button class="buy_btn product_btn">Buy</button></div>
+                <span class="product-price">RM10</span>
+                <div class="product-btn-container">
+                    <button class="cart-btn product-btn">Add To Cart</button>
+                    <button class="buy-btn product-btn">Buy</button>
                 </div>
+            </div>
             <div class="product">
-                <h1 class="product_title">Item8</h1>
-                <div class="product_img_container">
-                    <img src="./assets/img/empty.png" alt="" class="product_img">
+                <h1 class="product-title">Item8</h1>
+                <div class="product-img-container">
+                    <img src="./assets/img/empty.png" alt="" class="product-img">
                 </div>
-                <span class="product_price">RM10</span>
-                <div class="product_btn_container">
-                    <button class="cart_btn product_btn">Add To Cart</button>
-                    <button class="buy_btn product_btn">Buy</button></div>
+                <span class="product-price">RM10</span>
+                <div class="product-btn-container">
+                    <button class="cart-btn product-btn">Add To Cart</button>
+                    <button class="buy-btn product-btn">Buy</button>
                 </div>
+            </div>
         </div>
     </div>
     <footer></footer>

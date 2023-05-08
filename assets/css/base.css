@@ -1,0 +1,178 @@
+/* Page Body Styles */
+body{
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display:contents;
+}
+
+
+/* Page Header Styles*/
+header{
+    background-color: aquamarine;
+    padding: 55px 0 10px 55px;
+    margin: 0;
+    border: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.header-container{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    margin: -60px 0 -20px 0;
+    border: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+/*Page Header Image Styles*/
+header img{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+
+/* Page Header List Styles*/
+.li-container{
+    margin: 40px 40px 15px 40px;
+}
+
+
+header ul{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+header li{
+    display: inline;
+}
+
+
+.header-li{
+    padding: 0 10px;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    list-style: none;
+}
+
+
+
+.li-1::before{
+    content: url("../img/ico-phone.svg");
+}
+
+
+.li-2::before{
+    content:url("../img/ico-user.svg");
+}
+
+
+.li-3{
+    list-style: none;
+    background-color: royalblue;
+    padding:15px;
+    margin: -45px -30px 0px 40px;
+    border-radius: 30px;
+}
+
+
+header li a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    transition: .3s ease;
+    font-size: 1.5em;
+}
+
+header li a:hover{
+    color:  royalblue;
+    text-decoration: none;
+}
+
+.li-3:hover{
+    color:white;
+    background-color: gold;
+    transition: .3s ease;
+}
+
+.li-1{
+    margin-left: 35em;
+}
+
+
+/* Page Header nav Styles*/
+.nav{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 55px;
+    left: 0;
+    right: 0;
+    margin-top: 54px;
+}
+
+
+nav{
+    box-sizing: border-box;
+    display: block;
+    transition: 0.5s;
+    text-align: center;
+}
+
+nav a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 25px;
+}
+
+nav a:hover{
+    background-color: #211b4385;
+}
+
+ 
+/*Page Footer Styles*/
+footer{
+    text-align: center;
+    width: 100%;
+    margin-top: -90px;
+    border: 0;
+    background-color: black;
+    padding: 40px 0 20px 0;
+}
+
+
+footer a{
+    padding: 0 20px;
+}
+
+
+footer p{
+    color: white;
+    opacity: 0.5;
+}
+
+
+.social-media{
+    margin: 0;
+    border: 0;
+    display: inline-block;
+    align-items: center;
+}
+

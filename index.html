@@ -4,10 +4,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="home.js">
     <title>Hotel</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header-container">
+            <div>
+                <img src="./assets/img/hotelLogo.png" alt="hotel" usemap="#hotelLogo" width="130" height="120">
+
+                <map name="hotelLogo">
+                    <area shape="circle" coords="65 60 50" alt="homeLogo" href="index.html">
+                </map>
+            </div>
+            <div class="li-container">
+                <ul>    
+                    <li class=" header-li li-1"><a href="#">Contact US</a></li>
+                    <li class="header-li li-2"><a href="#">Login/Sign In</a></li>
+                    <li class="li-3"><a href="#">Booking Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="nav">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+            <a href="#">Review</a>
+            <a href="#">Feedback</a>
+        </nav>
+    </div>
+    <section>
+    <!--image slide start-->
+    <div class="slider">
+        <div class="slides">
+            <!--slide nutton start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <!--slide nutton end-->
+            <!--slide image start-->
+            <div class="slide first">
+                <img src="/assets/img/home1.jpg" alt="home1" width="100%" height="550px">
+            </div>
+            <div class="slide">
+                <img src="/assets/img/home2.jpg" alt="home2" width="100%" height="550px">
+            </div>
+            <div class="slide">
+                <img src="/assets/img/home3.jpg" alt="home3" width="100%" height="550px">
+            </div>
+            <!--slide image end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div classs="auto-btn1"></div>
+                <div classs="auto-btn2"></div>
+                <div classs="auto-btn3"></div>
+            </div>
+            <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+    </div>
+    <!--image slide end-->
+
+    <script>  /*Script for image slide*/
+        var counter = 1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 3){
+        counter = 1;
+    }
+}, 5000);
+    </script>
+    </section>
+    <div class="form-container">
+        <form class="forms">
+        <fieldset>
+          <label for="pax">Number of Guests:</label>
+          <input type="number" name="pax" id="pax" min="1" max="10" required>
+        
+          <p class="p-type">Room Type : 
+          <input type="text" list="room" name="roomtype" id="roomtype">
+            <datalist id="room">
+                <option value="Single Room">
+                <option value="Superior Room">
+                <option value="Superior Family Combo Room">
+                <option va;ue="Executive Seaview Room">
+                <option value="Executive Suites Room">
+            </datalist>
+          </p>
+          <label for="checkin">Check-In Date:</label>
+          <input type="date" name="checkin" id="checkin" required>
+      
+          <label for="checkout">Check-Out Date:</label>
+          <input type="date" name="checkout" id="checkout" required>
+      
+          <button type="submit">Check Availability</button>
+          </fieldset>
+        </form>
+    </div>
+    <article>
+        <div class="home-content-container">
+            <div class="home-content home-content1">
+                <div>
+                    <h3><b>Welcome to Our Hotel</b></h3>
+                    <img src="/assets/img/home-content1.jpg" alt="home-content1" width="400px" height="400px">
+                </div>
+                <div>
+                    <p>Located in the heart of the city, our hotel offers the perfect combination of luxury and convenience.
+                     Our modern rooms and amenities are designed to make your stay comfortable and memorable.</p>
+                </div>
+            </div>
+            <div class="home-content home-content2">
+                <div>
+                    <h3><b>Our Rooms</b></h3>
+                    <p>We offer a range of room options to fit your needs, from cozy standard rooms to spacious suites. 
+                     All of our rooms feature modern decor and come equipped with a flat-screen TV, mini fridge, and complimentary Wi-Fi.</p>
+                </div>
+                <div>
+                     <img src="/assets/img/home-content2.jpg" alt="home-content2" width="400px" height="400px">
+                </div>
+            </div>
+            <div class="home-content home-content3">
+                <div>
+                    <h3><b>On-Site Dining</b></h3>
+                    <img src="/assets/img/home-content3.jpg" alt="home-conten3" width="400px" height="400px">
+                </div>
+                <div>
+                    <p>Our hotel features a restaurant and lounge that serves delicious cuisine and refreshing drinks. 
+                     Start your day with a hearty breakfast, enjoy a leisurely lunch, or indulge in a decadent dinner.</p>
+                 </div>
+            </div>
+            <div class="home-content home-content4">
+                <div>
+                <h3><b>Amenities</b></h3>
+                    <ul>
+                    <li>24-hour front desk</li>
+                    <li>Fitness center</li>
+                    <li>Business center</li>
+                    <li>Outdoor pool</li>
+                    <li>Meeting and event spaces</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="/assets/img/home-content4.jpg" alt="home-content4" width="400px" height="400px" style="margin-left: 720px;">
+                </div>
+            </div>
+            <div class="home-content home-content5">
+                <div>
+                <h3><b>Explore the City</b></h3>
+                <img src="/assets/img/home-content5.jpg" alt="home-content5" width="400px" height="400px">
+                </div>
+                <div>
+                <p>Our hotel is located in a vibrant neighborhood with plenty of restaurants, shopping, and entertainment options. 
+                     We're just a short walk or ride away from popular attractions like the city's main park, museum, and theater.</p>
+                </div>
+            </div>
+            <div class="home-content home-content6">
+                <div>
+                <h3><b>Book Your Stay</b></h3>
+                <p>Ready to experience the luxury and convenience of our hotel? Book your stay now and enjoy special rates and promotions. 
+                    We can't wait to welcome you!</p>
+                </div>
+                <div>
+                    <img src="/assets/img/home-content6.jpg" alt="home-content6" width="400px" height="400px" >
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+            <div class="social-media">
+              <a href="#" class="facebook"><img src="./assets/img/facebook.png" alt="facebook" width="50px" height="50px"></a>
+              <a href="https://www.instagram.com/eddie_chua0604/" class="instagram"><img src="./assets/img/instagram.png" alt="instagram" width="50px" height="50px"></a>
+              <a href="#" class="twitter"><img src="./assets/img/twitter.png" alt="twitter" width="50px" height="50px"></a>
+              <a href="#" class="youtube"><img src="./assets/img/youtube.png" alt="youtube" width="50px" height="50px"></a>
+            </div>
+            <p>Please Follow Our Social Media to Get More Information in Timely</p>
+            <br>
+            <p>Copyright &copy; 2023 Example Company. All rights reserved.</p>
+    </footer>
 </body>
 </html>

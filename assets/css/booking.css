@@ -1,0 +1,221 @@
+/* Main content styles */
+main {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    }
+    
+    
+    /* Booking form styles */
+    .form-container {
+    text-align: center;
+    background-image: url("Seaview_\(Clifton_Beach\)_Karachi.jpg");
+    padding: 0;
+    display: block;
+    margin-top: -20px;
+    margin-bottom: -10px;
+    }
+
+
+    .booking-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: none;
+    }
+    
+    .form-container form {
+    display: inline-block;
+    margin: 50px;
+    margin-top: -10px;
+    }
+    
+    .form-container label {
+    display: inline-block;
+    width: 300px;
+    text-align: right;    
+    margin-right: 20px;
+    font-size: 1.5rem;
+    }
+
+    .p-type{
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+    
+    .booking-form input[type="date"],
+    .booking-form input[type="number"],
+    .booking-form input[type="submit"] {
+    display: inline-block;
+    width: 200px;
+    margin-right: 10px;
+    }
+    
+    
+    
+    .booking-form input[type="submit"] {
+    background-color: #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    }
+    
+    .booking-form input[type="submit"]:hover {
+    background-color: #666;
+    }
+
+    fieldset{
+        margin: 0;
+        border: 2px solid black;
+        border-radius: 20px;
+    }
+    
+    /* Reviews styles */
+    .reviews {
+    text-align: center;
+    color: #fff;
+    }
+    
+    .reviews h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    }
+    
+    .review {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    }
+    
+    .rating {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    }
+    
+    .author {
+    font-style: italic;
+    text-align: right;
+    }
+    
+    /* Responsive styles */
+    @media only screen and (max-width: 768px) {
+    main {
+    max-width: 100%;
+    padding: 1rem;
+    }
+    .image slider {
+    flex-direction: column;
+    }
+    .image slider img {
+    width: 100%;
+    height: auto;
+    }
+    }
+    
+    h2{
+        color: white;
+    }
+    
+    .desc{
+      color: white;  
+    }
+    
+    
+    .slider{
+        width: 100%;
+        height: 500px;
+        border-radius: 10px; 
+        overflow: hidden;
+    }
+    
+    .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+    }
+    
+    .slides input{
+        display: none;
+    }
+    
+    .slide{
+       
+        transition: 2s;
+    }
+    
+    .slide img{
+        width: 100vw;
+        height: 550px;
+    }
+    
+    .navigation-manual{
+        position: absolute;
+        width: 100vw;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+    }
+    
+    .manual-btn{
+        border: 2px solid #40D3DC;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .manual-btn:not(:last-child){
+        margin-right: 40px;
+    }
+    
+    .manual-btn:hover{
+        background: #40D3DC;
+    }
+    
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    
+    #radio2:checked ~ .first{
+        margin-left: -20%;
+    }
+    
+    #radio3:checked ~ .first{
+        margin-left: -40%;
+    }
+    
+    #radio4:checked ~ .first{
+        margin-left: -60%;
+    }
+    
+    #radio5:checked ~ .first{
+        margin-left: -80%;
+    }
+    
+    /*css for automatic navigation*/
+    
+    .navigation-auto{
+        position: absolute;
+        display: flex;
+        width: 800px;
+        justify-content: center;
+        margin-top: 460px;
+    
+    }
+    
+    .navigation-auto div{
+        border: 2px solid #40D3DC;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    
+    .navigation-auto div:not(:last-child){
+        margin-right: 40px;
+    }
+    
+    .slider:has(#radio1:checked) .manual-btn1,.slider:has(#radio2:checked) .manual-btn2,.slider:has(#radio3:checked) .manual-btn3,.slider:has(#radio4:checked) .manual-btn4,.slider:has(#radio5:checked) .manual-btn5{
+        background: #40D3DC;
+    }
+    
+   

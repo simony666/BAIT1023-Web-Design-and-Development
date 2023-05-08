@@ -12,9 +12,7 @@ body{
 /* Page Header Styles*/
 header{
     background-color: aquamarine;
-    padding: 55px 0 10px 55px;
-    margin: 0;
-    border: 0;
+    height:10vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -26,23 +24,25 @@ header{
     float: left;
     display: flex;
     flex-direction: row;
-    margin: -60px 0 -20px 0;
-    border: 0;
-    padding: 0;
     justify-content: space-between;
 }
 
 /*Page Header Image Styles*/
 header img{
-    padding: 0;
-    border: 0;
-    margin: 0;
+    height: 10vh;
+    width: 10vh;
+}
+
+
+.logo{
+    margin-left: 50px;
 }
 
 
 /* Page Header List Styles*/
 .li-container{
-    margin: 40px 40px 15px 40px;
+    margin:30px 40px 20px 10em;
+
 }
 
 
@@ -91,7 +91,7 @@ header li a{
     text-decoration: none;
     padding: 15px;
     transition: .3s ease;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 header li a:hover{
@@ -100,7 +100,7 @@ header li a:hover{
 }
 
 .li-3:hover{
-    color:white;
+    color:purple;
     background-color: gold;
     transition: .3s ease;
 }
@@ -115,7 +115,7 @@ header li a:hover{
     width: 100%;
     background-color: rgba(0, 0, 0, .2);
     position: fixed;
-    top: 55px;
+    top: 20px;
     left: 0;
     right: 0;
     margin-top: 54px;

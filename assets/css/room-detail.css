@@ -1,0 +1,112 @@
+article{
+    background: rgb(0,255,231);
+    background: linear-gradient(170deg, rgba(0,255,231,1) 0%, rgba(231,0,255,1) 46%, rgba(0,212,255,1) 100%);
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+
+article h3{
+    text-transform: uppercase;
+    color: rgb(71, 0, 0);
+    font-size: xx-large;
+    border: 5px solid white;
+    border-radius: 20px 0 20px 0;
+    text-align: center;
+    margin: 10px;
+    box-shadow:10px 10px 10px rgb(77, 75, 75) ;
+    margin-top: 75px;
+}
+
+.room-detail {
+    display: flex;
+}
+
+/*room-content1-5*/
+.room-content1 h3{
+    margin-top: 120px;
+    margin-right: 100px;
+}
+.room-content1 img{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.room-content1 ul{
+    margin-right: 100px;
+}
+
+
+.room-content2 h3{
+    margin-top: 15px;
+}
+
+
+
+.room-content3 h3{
+    margin-top: 15px;
+}
+
+.room-content4 h3{
+    margin-top: 15px;
+}
+
+.room-content5 h3{
+    margin-top: 15px;
+}
+
+
+
+
+article ul li{
+    font-size: larger;
+    list-style-image: url(../img/li-style.svg);
+    
+}
+
+
+article img{
+    margin: 0;
+    display: block;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(77, 75, 75);
+}
+
+
+
+
+
+.room-content-container{
+    padding-bottom: 50px;
+    border: 0;
+    margin-top: -100px;
+    
+}
+
+
+.room-content{
+    margin: 90px;
+    display: flex;
+}
+
+
+/*button container*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover{
+    color: purple;
+    background-color: gold;
+  }

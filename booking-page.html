@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./assets/css/header&footer.css">
+    <link rel="stylesheet" href="./assets/css/booking.css">
+	<title>Hotel Booking Page</title>
+	
+</head>
+<body>
+	<header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./assets/img/hotelLogo.png" alt="hotel" usemap="#hotelLogo">
+                <map name="hotelLogo">
+                    <area shape="circle" coords="65 60 50" alt="homeLogo" href="index.html">
+                    <area shape="circle" coords="25 26 50" alt="homeLogo" href="index.html">
+                </map>
+            </div>
+            <div class="li-container">
+                <ul>    
+                    <li class=" header-li li-1"><a href="#">Contact US</a></li>
+                    <li class="header-li li-2"><a href="#">Login/Sign In</a></li>
+                    <li class="li-3"><a href="#">Booking Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="nav">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Help</a>
+            <a href="#">Review</a>
+            <a href="#">Feedback</a>
+        </nav>
+    </div>
+	<main>
+        <!--image slider start-->
+        <div class="slider">
+          <div class="slides">
+            <!--radio button start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+                <img src="./assets/img/single-room.jpg" alt="single room"  >
+
+            </div>
+            <div class="slide">
+                <img src="./assets/img/superior-room.jpg" alt="superior room"  >
+            </div>
+            <div class="slide">
+                <img src="./assets/img/superior-family-combo-room.jpg" alt="superior family combo room"  >
+            </div>
+            <div class="slide">
+                <img src="./assets/img/executive-seaview-room.jpg" alt="executive seaview room"   >
+            </div>
+            <div class="slide">
+                <img src="./assets/img/executive-suites-room.jpg" alt="executive suites room"  >
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+
+            <!--automatic navigation end-->
+          </div>
+          <!--manual navigation start-->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn manual-btn1"></label>
+            <label for="radio2" class="manual-btn manual-btn2"></label>
+            <label for="radio3" class="manual-btn manual-btn3"></label>
+            <label for="radio4" class="manual-btn manual-btn4"></label>
+            <label for="radio5" class="manual-btn manual-btn5"></label>
+          </div>
+          <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            
+            console.log(document.getElementById('radio1').checked, document.getElementById('radio2').checked, document.getElementById('radio3').checked, document.getElementById('radio4').checked, document.getElementById('radio5').checked);
+
+            counter++;
+            if(counter > 5){
+                counter = 1;
+            }
+        },5000);
+        </script>
+
+		<div class="form-container">
+            <div class="background">
+                <img src="./assets/img/seaview-background.jpg" alt="">
+            </div>
+			<h2>Book Now</h2>
+			<form>
+            <fieldset>
+                <label for="pax">Number of guests:</label>
+                <input type="number" id="guests" min="1" max="10" required>
+
+                <p class="p-type">Room Type :
+                <input type="text" list="room" name="roomtype" id="roomtype">
+                    <datalist id="room">
+                        <option value="Single Room">
+                        <option value="Superior Room">
+                        <option value="Superior Family Combo Room">
+                        <option value="Executive Seaview Room">
+                        <option value="Executive Suites Room">
+                    </datalist>
+                </p>
+				<label for="Check-in-Date">Check-in- Date:</label>
+				<input type="date" id="Check-in-Date" required>
+                <label for="Check-out-Date">Check-out- Date:</label>
+                <input type="date" id="Check-out-Date" required>
+				<input type="submit" value="Book">
+            </fieldset>
+            </form>
+        </div>    
+	</main>
+    <footer>
+        <div class="social-media">
+          <a href="#" class="facebook"><img src="./assets/img/facebook.png" alt="facebook" width="50px" height="50px"></a>
+          <a href="https://www.instagram.com/eddie_chua0604/" class="instagram"><img src="./assets/img/instagram.png" alt="instagram" width="50px" height="50px"></a>
+          <a href="#" class="twitter"><img src="./assets/img/twitter.png" alt="twitter" width="50px" height="50px"></a>
+          <a href="#" class="youtube"><img src="./assets/img/youtube.png" alt="youtube" width="50px" height="50px"></a>
+        </div>
+        <p>Please Follow Our Social Media to Get More Information in Timely</p>
+        <br>
+        <p>Copyright &copy; 2023 Example Company. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
+
+
+
+

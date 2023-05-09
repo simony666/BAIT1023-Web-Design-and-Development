@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/login.css">
     <script type="text/javascript" src="./assets/js/base.js"></script>
     <title>Hotel</title>
 </head>
@@ -38,21 +37,10 @@
             </nav>
         </div>
     </header>
-    <section>
-        <div class="login-container">
-            <form action="" class="login-form">
-                <h2>LOGIN</h2>
-                <input type="email" name="email" class="box" placeholder="Enter Your Email">
-                <input type="password" name="password" class="box" placeholder="Enter Your Password">
-                <input type="sumbit" value="Login" id="submit">
-                <a class="password" href="#">Forget Password?</a>
-                <a class="admin-login" href="#" alt="admin-login">Admin Login</a>
-            </form>
-            <div class="side">
-                <img src="./assets/img/login1.png" alt="login1">
-            </div>
-        </div>
-    </section>
+
+
+
+    
     <footer>
         <div class="social-media"> 
           <a href="https://www.facebook.com/kokseng.chua" class="facebook"><img src="./assets/img/facebook.png" alt="facebook" width="50px" height="50px"></a>

@@ -315,5 +315,14 @@ footer p{
     align-items: center;
 }
 
+/*CSS For Javascript*/
+header.hidden {
+    transform: translateY(-100%);
+}
+
+header.visible {
+    transform: translateY(0);
+}
+
 
 

@@ -4,8 +4,58 @@
     background-size: cover;
 }
 
-.livechat-content{
-    margin-top: 100px;
-    margin-bottom: 950px;
+.main{
+    margin-top: 150px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
 }
+
+.main h1{
+    font-size: 3.5em;
+    color:  #3399ff;
+}
+
+.main p{
+    color:  #3399ff;
+    font-size: 2em;
+}
+
+.main h2{
+    font-size: 2em;
+}
+
+.main li{
+    font-size: 2em;
+    align-items: center;
+    text-decoration: underline;
+}
+.livechat-content{
+    margin-top: 50px;
+    margin-bottom: 750px;
+}
+
+.line div {
+    margin: 0 0.3rem;
+  }
+  
+  .line div:nth-child(1),
+  .line div:nth-child(3) {
+    height: 3px;
+    width: 1000px;
+    background:  rgb(74, 4, 237);
+    border-radius: 5px;
+  }
+  
+  .line {
+    display: flex;
+    align-items: center;
+  }
+  
+  .line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: rgb(74, 4, 237);
+    border-radius: 50%;
+  }
 

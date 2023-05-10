@@ -4,26 +4,37 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./assets/css/header&footer.css">
     <link rel="stylesheet" href="./assets/css/booking.css">
+    <script type="text/javascript" src="./assets/js/base.js"></script>
 	<title>Hotel Booking Page</title>
 	
 </head>
 <body>
 	<header>
         <div class="header-container">
-            <div class="logo">
-                <img src="./assets/img/hotelLogo.png" alt="hotel" usemap="#hotelLogo">
-                <map name="hotelLogo">
-                    <area shape="circle" coords="65 60 50" alt="homeLogo" href="index.html">
-                    <area shape="circle" coords="25 26 50" alt="homeLogo" href="index.html">
-                </map>
-            </div>
-            <div class="li-container">
-                <ul>    
-                    <li class=" header-li li-1"><a href="#">Contact US</a></li>
-                    <li class="header-li li-2"><a href="#">Login/Sign In</a></li>
-                    <li class="li-3"><a href="#">Booking Now</a></li>
-                </ul>
-            </div>
+            <div>
+                <nav class="nav-first">
+                    <div>
+                    <img src="./assets/img/hotelLogo.png" alt="hotelLogo"  usemap="#hotelLogo">
+                    <map name="hotelLogo">
+                        <area shape="circle" coords="25 23 45" alt="homeLogo" href="./index.html">
+                    </map>
+                    </div>
+                    <ul>
+                        <li class="home-contact"><a class="li-1" href="#">Contact US</a></li>
+                        <li class="home-login"><a class="li-1" href="#">Login / Sign In</a></li>
+                        <li class="home-booking"><a class="li-2" href="#">Booking Now</a></li>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+        <div class="nav-second">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Help</a>
+                <a href="#">Review</a>
+                <a href="#">Feedback</a>
+            </nav>
         </div>
     </header>
     <div class="nav">
@@ -48,20 +59,25 @@
             <!--radio buttons end-->
             <!--slide images start-->
             <div class="slide first">
-                <img src="./assets/img/single-room.jpg" alt="single room"  >
+                <img src="./assets/img/single-room.jpg" alt="single room">
+                <div class="image-text">Single Room</div>
 
             </div>
             <div class="slide">
-                <img src="./assets/img/superior-room.jpg" alt="superior room"  >
+                <img src="./assets/img/superior-room.jpg" alt="superior room">
+                <div class="image-text">Superior Room</div>
             </div>
             <div class="slide">
-                <img src="./assets/img/superior-family-combo-room.jpg" alt="superior family combo room"  >
+                <img src="./assets/img/superior-family-combo-room.jpg" alt="superior family combo room">
+                <div class="image-text">Superior Family Combo Room</div>
             </div>
             <div class="slide">
-                <img src="./assets/img/executive-seaview-room.jpg" alt="executive seaview room"   >
+                <img src="./assets/img/executive-seaview-room.jpg" alt="executive seaview room">
+                <div class="image-text">Executive Seaview Room</div>
             </div>
             <div class="slide">
-                <img src="./assets/img/executive-suites-room.jpg" alt="executive suites room"  >
+                <img src="./assets/img/executive-suites-room.jpg" alt="executive suites room">
+                <div class="image-text">Executive Suites Room</div>
             </div>
             <!--slide images end-->
             <!--automatic navigation start-->
@@ -124,8 +140,8 @@
         </div>    
 	</main>
     <footer>
-        <div class="social-media">
-          <a href="#" class="facebook"><img src="./assets/img/facebook.png" alt="facebook" width="50px" height="50px"></a>
+        <div class="social-media"> 
+          <a href="https://www.facebook.com/kokseng.chua" class="facebook"><img src="./assets/img/facebook.png" alt="facebook" width="50px" height="50px"></a>
           <a href="https://www.instagram.com/eddie_chua0604/" class="instagram"><img src="./assets/img/instagram.png" alt="instagram" width="50px" height="50px"></a>
           <a href="#" class="twitter"><img src="./assets/img/twitter.png" alt="twitter" width="50px" height="50px"></a>
           <a href="#" class="youtube"><img src="./assets/img/youtube.png" alt="youtube" width="50px" height="50px"></a>

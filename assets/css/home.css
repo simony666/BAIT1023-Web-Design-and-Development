@@ -139,12 +139,12 @@ article h3{
 
 article p{
     margin: 60px;
-    font-size: larger;
+    font-size: 30px;
 }
 
 
 article ul li{
-    font-size: larger;
+    font-size: 30px;
     list-style-image: url(../img/li-style.svg);
     
 }

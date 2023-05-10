@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/about-us.css">
+    <script type="text/javascript" src="./assets/js/base.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div>
+                <nav class="nav-first">
+                    <div>
+                    <img src="./assets/img/hotelLogo.png" alt="hotelLogo"  usemap="#hotelLogo">
+                    <map name="hotelLogo">
+                        <area shape="circle" coords="25 23 45" alt="homeLogo" href="./index.html">
+                    </map>
+                    </div>
+                    <ul>
+                        <li class="home-contact"><a class="li-1" href="#">Contact US</a></li>
+                        <li class="home-login"><a class="li-1" href="./login.html">Login / Sign In</a></li>
+                        <li class="home-booking"><a class="li-2" href="#">Booking Now</a></li>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+        <div class="nav-second">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Help</a>
+                <a href="#">Review</a>
+                <a href="#">Feedback</a>
+            </nav>
+        </div>
+    </header>
+    <div class="about-main">
+        <div class="heading">
+            <h1>About Us</h1>
+        </div>
+        <div class="about-container">
+            <section class="about">
+                <div class="about-img">
+                    <img src="./assets/img/about-us.jpg" alt="about-img">
+                </div>
+                <div class="about-content">
+                    <p>Welcome to our hotel booking page! We are a team of hospitality professionals dedicated to 
+                        providing you with the best possible experience during your stay. Our hotel is committed 
+                        to offering exceptional service, top-notch amenities, and comfortable accommodations that will make you feel at home.
+                    </p><br>
+                    <p>Our goal is to provide you with a memorable and stress-free stay, whether you are traveling for business or pleasure. 
+                        Our friendly staff is always available to assist you with any questions or concerns you may have during your stay.
+                    </p><br>
+                    <p>
+                        Thank you for considering our hotel for your upcoming stay. 
+                        We look forward to welcoming you and providing you with an exceptional experience that you will never forget.
+                    </p>
+                    <input type="button" name="read-more" value="Read More" class="read-more" id="display" onclick="" />
+                </div>
+            </section>
+        </div>
+        <article class="more-container">
+            <div class="more">
+                <div class="facility">
+                    <div class="more-img">
+                        <img src="./assets/img/about-us.jpg" alt="facility">
+                    </div>
+                    <div class="more-title">
+                        <h2>Hotel Facility</h2>
+                        <a href="#" class="read-more2">Read More</a>
+                    </div>
+                </div>
+                <div class="food">
+                    <div class="more-img">
+                        <img src="./assets/img/about-us.jpg" alt="food">
+                    </div>
+                    <div class="more-title">
+                    <h2>Hotel Restaurants, Cafe and ...</h2>
+                    <a href="#" class="read-more2">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <div class="social-media"> 
+          <a href="https://www.facebook.com/kokseng.chua" class="facebook"><img src="./assets/img/facebook.png" alt="facebook" width="50px" height="50px"></a>
+          <a href="https://www.instagram.com/eddie_chua0604/" class="instagram"><img src="./assets/img/instagram.png" alt="instagram" width="50px" height="50px"></a>
+          <a href="#" class="twitter"><img src="./assets/img/twitter.png" alt="twitter" width="50px" height="50px"></a>
+          <a href="#" class="youtube"><img src="./assets/img/youtube.png" alt="youtube" width="50px" height="50px"></a>
+        </div>
+        <p>Please Follow Our Social Media to Get More Information in Timely</p>
+        <br>
+        <p>Copyright &copy; 2023 Example Company. All rights reserved.</p>
+</footer>
+<script>
+    const displayButton = document.getElementById('display');
+    const moreContainer = document.querySelector('.more-container');
+
+    displayButton.addEventListener('click', () => {
+    moreContainer.style.display = 'block';
+    });
+</script>
+</body>
+</html>

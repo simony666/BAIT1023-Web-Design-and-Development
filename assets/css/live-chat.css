@@ -1,0 +1,11 @@
+.body{
+    background-image: url("/assets/img/contactus_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.livechat-content{
+    margin-top: 100px;
+    margin-bottom: 950px;
+}
+

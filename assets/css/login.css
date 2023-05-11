@@ -53,31 +53,48 @@ section{
     border: none;
     outline: none;
     border-radius: 20px;
+    text-align: center;
 }
 
 
 #submit:hover{
     cursor: pointer;
-    background-color: #750000;
+    background-color: rgb(200, 140, 76);
 }
 
 
-.login-form a{
+.password{
     text-decoration: none;
     color:black;
     margin-top: 20px;
 }
 
 
-.login-form a:hover{
-    color: #fd4e4e;
+.password:hover{
+    color: rgb(200, 140, 76);
+}
+
+
+.admin-login{
+    text-decoration: none;
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+.admin-login:hover{
+    background-color: rgb(200, 140, 76);
 }
 
 
 /*Right Side*/
 .side{
     display: flex;
-    background-color: #750000;
+    background-color: rgb(200, 140, 76);
     justify-content: center;
     align-items: center;
     width: 50%;

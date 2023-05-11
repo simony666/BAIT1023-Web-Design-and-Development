@@ -9,16 +9,17 @@ main {
     /* Booking form styles */
     .form-container {
     text-align: center;
-    /* background-image: url("./assets/img/seaview-background.jpg"); */
-    /* background-color: #000000; */
     padding: 0;
     display: block;
-    margin-top: -20px;
-    margin-bottom: 30px;
+    margin-top: -2rem;
+    margin-bottom: rem;
     position: relative;
     z-index: 100;
     }
 
+    .form-container h2{
+        font-size: xx-large;
+    }
     .background {
         position: absolute;
         z-index: -1000;
@@ -32,7 +33,7 @@ main {
     }
    
     .booking-form h2 {
-    font-size: 1.5rem;
+    font-size: xx-large;
     margin-bottom: none;
     }
     
@@ -45,8 +46,8 @@ main {
     .form-container label {
     display: inline-block;
     width: 300px;
-    text-align: right;    
-    margin-right: 20px;
+    text-align: center;    
+    margin-right: 10px;
     font-size: 1.5rem;
     }
 
@@ -54,10 +55,18 @@ main {
         display: inline-block;
         font-size: 1.5rem;
     }
+
+.form-container input[type="submit"] {
+   width: 10rem;
+   margin: 2rem 0;
+   border-radius: 5rem;
+   border: 2px solid black;
+}
+
     
     .booking-form input[type="date"],
-    .booking-form input[type="number"],
-    .booking-form input[type="submit"] {
+    .booking-form input[type="number"]
+     {
     display: inline-block;
     width: 200px;
     margin-right: 20px;
@@ -108,7 +117,7 @@ main {
     
     
     .slider{
-        width: 100%;
+        width: 1519px;
         height: 500px;
         border-radius: 10px; 
         overflow: hidden;
@@ -130,7 +139,7 @@ main {
     }
     
     .slide img{
-        width: 100vw;
+        width: 1519px;
         height: 550px;
     }
 
@@ -148,7 +157,7 @@ main {
     
     .navigation-manual{
         position: absolute;
-        width: 100vw;
+        width: 1519px;
         margin-top: -40px;
         display: flex;
         justify-content: center;

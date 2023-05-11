@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Review Page</title>
-	<link rel="stylesheet"  href="assets/css/review.css">
+	<link rel="stylesheet" href="assets/css/review.css">
     <link rel="stylesheet" href="assets/css/header&footer.css">
     <script type="text/javascript" src="./assets/js/base.js"></script>
 </head>
@@ -38,8 +38,38 @@
 	
 	<main>
 		<div class="body">
-       <section class="review" id="review">		
+        <section class="review" id="review">		
 		<h1>Customer's Review</h1>
+		<div class="review-body">
+			<p>Dear Customer,<br>
+			Thank you for choosing to stay with us. We hope you had a pleasant stay and look forward to welcome you back soon!</p>
+			
+			<h4>Please rate our hotel service</h4>
+			<div class="center">
+				<div class="stars">
+					<input type="radio" id="five" name="rate" value="5">
+					<label for="five"></label>
+					<input type="radio" id="four" name="rate" value="4">
+					<label for="four"></label>
+					<input type="radio" id="three" name="rate" value="3">
+					<label for="three"></label>
+					<input type="radio" id="two" name="rate" value="2">
+					<label for="two"></label>
+					<input type="radio" id="one" name="rate" value="1">
+					<label for="one"></label>
+				</div>
+				<br/>
+				<br/>
+				<br/>
+				<label for="text">Write your review:</label><br/><br/>
+				<textarea cols="80" name="commentText" rows="5"></textarea><br>
+				<br>
+
+				<div class="clear"></div>
+				<input style="background:#43a7d5;color:#fff;padding:12px;border:0" type="submit" value="Submit your review">
+			</div>	
+			
+		</div>
 		<div class="review-slider">
 			<div class="wrapper">
 				<div class="box">
@@ -105,7 +135,6 @@
               <a href="#" class="youtube"><img src="./assets/img/youtube.png" alt="youtube" width="50px" height="50px"></a>
         </div>
         <p>Please Follow Our Social Media to Get More Information in Timely</p>
-        <br>
         <p>Copyright %copy; 2023 Example Company. All rights reserved.</p>
     </footer>
 </body>

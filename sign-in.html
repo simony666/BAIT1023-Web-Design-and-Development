@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/sign-in.css">
+    <script type="text/javascript" src="./assets/js/base.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div>
+                <nav class="nav-first">
+                    <div>
+                    <img src="./assets/img/hotelLogo.png" alt="hotelLogo"  usemap="#hotelLogo">
+                    <map name="hotelLogo">
+                        <area shape="circle" coords="25 23 45" alt="homeLogo" href="./index.html">
+                    </map>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>    
+    <section>
+        <div class="sign-container">
+            <form action="" class="sign-form">
+                <h2>Sign in</h2>
+                <p>User Name</p><input type="text" name="name" class="box" placeholder="Enter Your User Name" required>
+                <p>Contact No</p><input type="tel" name="phone" class="box" placeholder="Enter Your Phone" pattern="[0-9]{10}" required>
+                <P>Email</P><input type="email" name="email" class="box" placeholder="Enter Your Email" required>
+                <p>IC Number</p><input type="text" name="ic" class="box" placeholder="Enter Your IC Number" pattern="[0-9]{12}" required>
+                <p> Gender :<input type="radio" name="gender" id="M" value="male" checked /> <label for="M">male </label>  
+                <input type="radio" name="gender" id="F" value="female" /> <label for="F"> female</label></p>
+                <p>Password</p><input type="password" name="password" class="box password" placeholder="Enter Your Password">
+                <p>Confirm Password</p><input type="password" name="confirm-password" class="box confirm-password" placeholder="Confirm Password">
+                <input type="submit" value="Login" id="submit">
+            </form>
+            <div class="side">
+                <img src="./assets/img/login1.png" alt="login1">
+            </div>
+        </div>
+    </section>
+    <script>
+        document.querySelector('#submit').onclick = function(){
+
+            var password = document.querySelector('.password').value,
+                confirmPassword = document.querySelector('.confirm-password').value;
+
+                if(password == ""){
+                    alert("Field cannot be empty.");
+                }
+                else if(password != confirmPassword){
+                    alert("Password didn't match try again.");
+                    return false
+                }
+                else if(password == confirmPassword){
+                    alert("Password match.")
+                }
+                return true
+        }
+    </script>
+    <footer>
+        <div class="social-media"> 
+            <a href="https://www.facebook.com/kokseng.chua" class="facebook"><img src="./assets/img/facebook.png" alt="facebook" width="50px" height="50px"></a>
+            <a href="https://www.instagram.com/eddie_chua0604/" class="instagram"><img src="./assets/img/instagram.png" alt="instagram" width="50px" height="50px"></a>
+            <a href="#" class="twitter"><img src="./assets/img/twitter.png" alt="twitter" width="50px" height="50px"></a>
+            <a href="#" class="youtube"><img src="./assets/img/youtube.png" alt="youtube" width="50px" height="50px"></a>
+        </div>
+        <p>Please Follow Our Social Media to Get More Information in Timely</p>
+        <br>
+        <p>Copyright &copy; 2023 Example Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

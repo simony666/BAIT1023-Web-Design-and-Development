@@ -46,3 +46,7 @@ function updatedt(){
 //update footer datetime
 updatedt();
 setInterval(updatedt,1000);
+
+if (localStorage.getItem('user') != null){
+    document.getElementById('acc').innerHTML =localStorage.getItem('user')
+}

@@ -13,7 +13,7 @@
 
 .main h1{
     font-size: 3.5em;
-    color:  #3399ff;
+    color:  #1669f7;
 }
 
 .main p{
@@ -28,11 +28,10 @@
 .main li{
     font-size: 2em;
     align-items: center;
-    text-decoration: underline;
 }
 .livechat-content{
     margin-top: 50px;
-    margin-bottom: 750px;
+    margin-bottom: 550px;
 }
 
 .line div {
@@ -43,7 +42,7 @@
   .line div:nth-child(3) {
     height: 3px;
     width: 1000px;
-    background:  rgb(74, 4, 237);
+    background:  rgb(104, 39, 255);
     border-radius: 5px;
   }
   
@@ -57,5 +56,12 @@
     height: 10px;
     background: rgb(74, 4, 237);
     border-radius: 50%;
+  }
+
+  .livechat{
+    position: absolute;
+    margin-top: 100PX;
+    color: rgb(87, 0, 185);
+
   }
 

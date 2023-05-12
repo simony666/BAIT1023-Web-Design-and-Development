@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Admin</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/booking.css">
+    <script src="./assets/js/main.js" async></script>
+
+</head>
+<body>
+    <div class="body">
+        <div class="top">
+            <div class="logo-container">
+                <a href="./index.html">
+                    <img src="../assets/img/hotelLogo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <div class="acc-container">
+                <div class="acc">Login</div>
+            </div>
+        </div>
+        <div class="container">
+            <form action="./booking.php" method="get" class="booking-form">
+                <table class="booking-table">
+                    <!--room customerdetail deposit-->
+                    <tr class="section room-sec">
+                        <th colspan="4">Room Detail</th>
+                    </tr>
+                    <tr class="section room-data">
+                        <td class="b-title">Pax</td>
+                        <td colspan="3" class="b-input"><input type="text" name="b-pax" id="b-pax"></td>
+                    </tr>
+                    <tr class="section room-data">
+                        <td class="b-title">Room</td>
+                        <td colspan="3" class="b-input"><input type="text" name="b-room" id="b-room"></td>
+                    </tr>
+                    <tr class="section cust-sec">
+                        <th colspan="4">Customer Detail</th>
+                    </tr>
+                    <tr class="section cust-data">
+                        <td class="b-title">Name</td>
+                        <td colspan="3" class="b-input"><input type="text" name="b-name" id="b-name" onchange="namechange()"></td>
+                    </tr>
+                    <tr class="section cust-data">
+                        <td class="b-title">IC</td>
+                        <td class="b-input"><input type="text" name="b-ic" id="b-ic" onchange="icchange()"></td>
+                        <td class="b-title">Gender</td>
+                        <td class="b-input"><span id="b-gender">Unknown</span></td>
+                    </tr>
+                    <tr class="section cust-data">
+                        <td class="b-title">Phone</td>
+                        <td colspan="3" class="b-input"><input type="text" name="b-phone" id="b-phone"></td>
+                    </tr>
+                    <tr class="section cust-data">
+                        <td class="b-title">Email</td>
+                        <td colspan="3" class="b-input"><input type="text" name="b-email" id="b-email"></td>
+                    </tr>
+                    <tr class="section cust-data">
+                        <td class="b-title">Race</td>
+                        <td colspan="3" class="b-input">
+                            <select name="b-races" id="b-races">
+                                <option value="malay">Malay</option>
+                                <option value="chinese">Chinese</option>
+                                <option value="Indian">Indian</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="section depo-sec">
+                        <th colspan="4">Deposit</th>
+                    </tr>
+                    <tr class="section depo-data">
+                        <td class="b-title">Deposit</td>
+                        <td colspan="3" class="b-input">
+                            <span>RM </span>
+                            <input type="text" name="b-deposit" id="b-deposit">
+                        </td>
+                    </tr>
+                    <tr class="section depo-data">
+                        <td colspan="4" class="b-btn"><input type="submit" value="Submit" id="b-submitbtn"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="bottom">
+            <div class="datetime-container">
+                <div class="datetime date">00 JAN 0000</div>
+                <div class="datetime time">00:00:00</div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/booking.js" async></script>
+</body>
+</html>

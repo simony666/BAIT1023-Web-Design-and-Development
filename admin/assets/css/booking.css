@@ -1,0 +1,71 @@
+.container{
+    overflow: hidden;
+}
+
+.booking-form{
+    width: 70%;
+    height: 90%;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-table{
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    border: 2px solid black;
+    font-size: 2rem;
+}
+
+.depo-sec th, .cust-sec th, .room-sec th{
+    font-size: 2rem;
+}
+
+
+th{
+    font-weight: bold;
+    font-size: large;
+}
+.b-title{
+    text-align: right;
+    padding-right: 0.5em;
+}
+.b-title:after{
+    content: ":";
+}
+.b-input{
+    text-align: left;
+    padding-left: 0.5em;
+    height: 2rem;
+}
+.b-input input{
+    font-size: 2rem;
+}
+
+.b-input input{
+    border-radius: 0 1em 1em 0;
+    width: 90%;
+}
+
+.b-deposit:before{
+    content: "RM ";
+}
+
+.b-btn{
+    text-align: center;
+}
+
+.b-btn select{
+    height: 100%;
+}
+
+.b-btn input[type="submit"]{
+    width: 40%;
+    height: 2rem;
+    border-radius: 1rem 1rem 0 0;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(90,81,223,1) 42%, rgba(255,0,52,1) 100%);
+    color: white;
+    font-size: 1.5rem;
+}

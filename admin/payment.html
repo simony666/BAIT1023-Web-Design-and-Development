@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Admin</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/payment.css">
+    <script src="./assets/js/main.js" async></script>
+    <script src="./assets/js/payment.js" asyncs></script>
+
+</head>
+<body>
+    <div class="body">
+        <div class="top">
+            <div class="logo-container">
+                <a href="./index.html">
+                    <img src="../assets/img/hotelLogo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <div class="acc-container">
+                <div class="acc">Login</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form-container">
+                <form action="./payment.php">
+                    <label for="p-room-id" class="p-roomid-title">Room id</label>
+                    <input type="text" name="p-room-id" id="p-room-id">
+                    <input type="button" class="check-btn" value="Check" onclick="check()">
+                </form>
+            </div>
+            <div class="payment hidden">
+                <div class="btn-container">
+                    <button onclick="back()">Back</button>
+                </div>
+                <div class="payment-detail">
+                    <h1>Customer Name</h1>
+                    <span class="p-name">Unknown</span>
+                    <h1>Total Amount</h1>
+                    <span class="p-amount">RM 0.0</span>
+                    <h1>Deposit</h1>
+                    <span class="p-deposit">RM 0.0</span>
+                    <h1>Amount To Pay</h1>
+                    <span>RM 0.0</span>
+                    <div class="method-container">
+                        <div class="method credit" onclick="credit()">
+                            <img src="./assets/img/credit.png" alt="credit">
+                            <span>CREDIT</span>
+                        </div>
+                        <div class="method cash" onclick="cash()">
+                            <img src="./assets/img/cash.png" alt="cash">
+                            <span>CASH</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="datetime-container">
+                <div class="datetime date">00 JAN 0000</div>
+                <div class="datetime time">00:00:00</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

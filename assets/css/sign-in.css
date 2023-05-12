@@ -5,9 +5,9 @@ section{
 }
 
 
-.login-container{
+.sign-container{
     display: flex;
-    height: 500px;
+    height: 850px;
     width: 800px;
     border: 5px solid black;
     border-radius: 80px 0 0 0;
@@ -17,7 +17,7 @@ section{
 }
 
 
-.login-form{
+.sign-form{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -27,16 +27,21 @@ section{
 }
 
 
-.login-form h2{
+.sign-form h2{
     font-size: 3rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.sign-form p{
+    margin: 0 0 20px 0;
 }
 
 
 .box{
     padding: 12px;
     width: 65%;
-    margin: 15px;
+    margin: 0 15px 15px 15px;
     border: 1px solid black;
     outline: none;
     border-radius: 20px;
@@ -46,7 +51,7 @@ section{
 #submit{
     padding: 12px 30px;
     width: 40%;
-    margin-top: 40px;
+    margin-top: 15px;
     background-color: black;
     color: white;
     font-weight: bold;
@@ -59,40 +64,6 @@ section{
 
 #submit:hover{
     cursor: pointer;
-    background-color: rgb(122, 207, 238);
-}
-
-
-.password{
-    text-decoration: none;
-    color:black;
-    margin-top: 20px;
-}
-
-
-.password:hover{
-    color: rgb(122, 207, 238);
-}
-
-
-.option{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.more-option{
-    text-decoration: none;
-    margin: 40px 15px 0 15px;
-    background-color: black;
-    color: white;
-    padding: 10px 30px;
-    border-radius: 30px;
-    text-align: center;
-}
-
-
-.more-option:hover{
     background-color: rgb(122, 207, 238);
 }
 

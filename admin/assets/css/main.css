@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+.top{
+    background-color: #a3a3a3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-container{
+    width: 10vh;
+    height: 10vh;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+.acc-container{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+.acc{
+    font-size: 1rem;
+    color:white
+    
+}
+.container{
+    background: linear-gradient(90deg, rgba(27,9,156,1) 0%, rgba(39,39,183,1) 35%, rgba(0,212,255,1) 100%);
+    height: calc(90vh - 2rem);
+    width: 100%;
+}
+.bottom{
+    position: fixed;
+    height: 2rem;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    color:white;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.datetime{
+    float:left;
+    font-size: 1rem;
+    margin: 0px 0.5em;
+}

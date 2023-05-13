@@ -74,7 +74,7 @@ header{
 
 .li-1{
     display: block;
-    padding: 0 30px;
+    padding: 0 30px 0 0;
     text-transform: uppercase;
     text-decoration: none;
     color: black;

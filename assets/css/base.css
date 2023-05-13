@@ -33,12 +33,25 @@ header{
     justify-content: space-between;
     padding: 0 100px;
     transition: .5s;
+    float: left;
 }
 
 .nav-first img{
     display: block;
     height: 10vh;
     width: 11vh;
+}
+
+.nav-first .page-name a{
+    text-decoration: none;
+    color: rgb(9, 39, 63);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    margin-left: -450px;
 }
 
 
@@ -109,13 +122,11 @@ header{
 
 /* Page Header second nav Styles*/
 .nav-second{
-    width: 100%;
+    margin-top: -16px;
+}
+.nav-second ul{
+    list-style: none;
     background-color: rgba(0, 0, 0, .2);
-    position: fixed;
-    top: 20px;
-    left: 0;
-    right: 0;
-    margin-top: 55px;
 }
 
 
@@ -126,10 +137,17 @@ nav{
     text-align: center;
 }
 
-nav a{
+
+.nav-second ul li{
     display: inline-block;
-    text-align: center;
+    position: relative;
+}
+
+
+.nav-second ul li a{
+    display: block;
     text-decoration: none;
+    text-align: center;
     text-transform: uppercase;
     transition: .3s ease;
     font-size: 20px;
@@ -137,10 +155,31 @@ nav a{
     letter-spacing: 2px;
     font-weight: 600;
     padding: 25px;
+
 }
 
+
+.nav-second ul li ul.sublist li{
+    display: block;
+}
+
+
+.nav-second ul li ul.sublist{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 0;
+}
+
+
 .nav-second nav a:hover{
-    background-color: #211b4385;
+    background-color: rgb(71, 70, 70);
+}
+
+
+.nav-second ul li:hover ul.sublist{
+    display: block;
 }
 
 

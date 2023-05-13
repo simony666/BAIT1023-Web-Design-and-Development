@@ -21,6 +21,7 @@
     font-size: 50px;
     margin-bottom: 25px;
     position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .heading h1::after{
@@ -69,6 +70,7 @@
 
 .about-content{
     flex: 1;
+    font-family: monospace;
 }
 
 
@@ -147,6 +149,7 @@
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -159,6 +162,7 @@
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .more-title a{

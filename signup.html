@@ -32,7 +32,7 @@
     <section>
         <div class="sign-container">
             <form action="" class="sign-form">
-                <h2>Sign in</h2>
+                <h2>Sign Up</h2>
                 <p>User Name</p><input type="text" name="name" class="box" placeholder="Enter Your User Name" required>
                 <p>Contact No</p><input type="tel" name="phone" class="box" placeholder="Enter Your Phone" pattern="[0-9]{10}" required>
                 <P>Email</P><input type="email" name="email" class="box" placeholder="Enter Your Email" required>
@@ -40,8 +40,8 @@
                 <p> Gender :<input type="radio" name="gender" id="M" value="male" checked /> <label for="M">male </label>  
                 <input type="radio" name="gender" id="F" value="female" /> <label for="F"> female</label></p>
                 <p>Password</p><input type="password" name="password" class="box password" placeholder="Enter Your Password">
-                <p>Confirm Password</p><input type="password" name="confirm-password" class="box confirm-password" placeholder="Confirm Password">
-                <input type="submit" value="Sign in" id="submit">
+                <p>Confirm Password</p><input type="password" name="box confirm-password" class="box confirm-password" placeholder="Confirm Password">
+                <input type="submit" value="Sign Up" id="submit">
             </form>
             <div class="side">
                 <img src="./assets/img/login1.png" alt="login1">
@@ -62,7 +62,7 @@
                     return false
                 }
                 else if(password == confirmPassword){
-                    alert("Password match.")
+                    alert("Password match. Sign up Successful!")
                 }
                 return true
         }

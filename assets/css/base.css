@@ -155,7 +155,9 @@ nav{
     letter-spacing: 2px;
     font-weight: 600;
     padding: 25px;
-
+}
+.nav-restaurant{
+    padding: 25px 1px !important;
 }
 
 

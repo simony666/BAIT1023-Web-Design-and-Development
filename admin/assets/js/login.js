@@ -1,4 +1,4 @@
-acc = JSON.parse('[{"user": "Simon","pass": "123"}, {"user": "SiewYou","pass": "SiewYou"}]');
+acc = JSON.parse('[{"user": "Simon","pass": "Simon"}, {"user": "SiewYou","pass": "SiewYou"},{"user": "Eddie","pass": "Eddie"},{"user": "QinLong","pass": "QinLong"}]');
 
 
 function login(){

@@ -46,3 +46,12 @@ function updatedt(){
 //update footer datetime
 updatedt();
 setInterval(updatedt,1000);
+
+if (localStorage.getItem('user') != null){
+    document.getElementById('acc').innerHTML =localStorage.getItem('user')
+}
+
+function logout(){
+    localStorage.removeItem('user');
+    window.location.href = './login.html';
+}

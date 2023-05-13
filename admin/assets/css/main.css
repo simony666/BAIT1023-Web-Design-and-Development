@@ -26,6 +26,12 @@ a{
     padding: 1rem;
     display: flex;
     align-items: center;
+    height:90%;
+    margin: auto 0;
+}
+.acc-container img{
+    height: 30px;
+    margin-left: 1rem
 }
 .acc{
     font-size: 1rem;

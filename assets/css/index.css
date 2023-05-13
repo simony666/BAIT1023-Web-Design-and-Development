@@ -1,1 +1,149 @@
-/*qinlong8/
+* {
+    box-sizing: border-box;
+}
+
+/* Section Page Styles*/
+section {
+    margin-top: 10vh;
+    border: 0;
+}
+
+/*Css for slideshow-container*/
+.sldeshow-container {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    z-index: 1;
+}
+
+
+.slideshow-container img {
+    vertical-align: middle;
+    width: 100%;
+    height: 680px;
+}
+
+
+.my-slides .slideshow-text p{
+    color:white;
+    position: absolute;
+    bottom: 300px;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.dot-container {
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+    z-index: 100;
+}
+
+
+.active {
+    background-color: rgb(45, 117, 143);
+}
+
+
+/* Fading animation */
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0.2
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0.5
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+
+
+/*Article Page Style*/
+article {
+    background: rgb(0, 255, 231);
+    background: rgb(151, 184, 218);
+}
+
+
+article h3 {
+    text-transform: uppercase;
+    color: rgb(71, 0, 0);
+    font-size: xx-large;
+    border: 5px solid white;
+    border-radius: 20px 0 20px 0;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 10px 10px 10px rgb(77, 75, 75);
+}
+
+
+
+article p {
+    margin: 60px;
+    font-size: 30px;
+}
+
+
+article ul li {
+    font-size: 30px;
+    list-style-image: url(../img/li-style.svg);
+
+}
+
+
+article img {
+    margin: 0;
+    display: block;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(77, 75, 75);
+}
+
+
+.home-content4 div h3 {
+    padding: 0 340px;
+}
+
+
+.home-content-container {
+    padding-bottom: 50px;
+    border: 0;
+    margin-top: -88px;
+}
+
+
+.home-content {
+    margin: 100px;
+    display: flex;
+}

@@ -5,6 +5,7 @@
 /*Page About Us Heading Styles*/
 .about-main{
     margin-top: 130px;
+    background-color: rgb(247, 241, 232);
 }
 .heading{
     width: 90%;
@@ -17,9 +18,18 @@
 }
 
 
+.heading img{
+    width: 111%;
+    height: 550px;
+    margin-top: -100px;
+    opacity: 0.7;
+}
+
+
 .heading h1{
     font-size: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 300px;
+    margin-top: -300px;
     position: relative;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

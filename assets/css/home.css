@@ -205,7 +205,7 @@ article {
 }
 
 
-.information-content{/**/
+.information-content{
     max-height: 300px;
     height: 100%;
     border: 2px solid black;

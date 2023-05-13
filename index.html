@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <script type="text/javascript" src="./assets/js/base.js"></script>
-    <title>Hotel</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/hotelLogo.png">
+    <title>Royal Hotel</title>
 </head>
 
 <body>
@@ -22,22 +23,42 @@
                             <area shape="circle" coords="25 23 45" alt="homeLogo" href="./index.html">
                         </map>
                     </div>
+                    <div class="page-name">
+                        <a href="./index.html">Royal Hotel</a>
+                    </div>
                     <ul>
-                        <li class="home-contact"><a class="li-1" href="#">Contact US</a></li>
-                        <li class="home-login"><a class="li-1" href="./login.html">Login / Sign In</a></li>
-                        <li class="home-booking"><a class="li-2" href="#">Booking Now</a></li>
+                        <li class="home-contact"><a class="li-1" href="./contact-us.html">Contact US</a></li>
+                        <li class="home-login"><a class="li-1" href="./login.html" target="_blank">Login / Sign In</a></li>
+                        <li class="home-booking"><a class="li-2" href="./booking-page.html">Booking Now</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="nav-second">
             <nav>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Help</a>
-                <a href="#">Review</a>
-                <a href="#">Feedback</a>
-            </nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about-us.html">About Us</a>
+                        <ul class="sublist">
+                            <li><a href="./about-us.html">team</a></li>
+                            <li><a href="./facility.html">facility</a></li>
+                            <li><a href="./restaurants.html">dining</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Help</a>
+                        <ul class="sublist">
+                            <li><a href="./live-chat.html">live chat</a></li>
+                            <li><a href="./faq.html">faq</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Room</a>
+                        <ul class="sublist">
+                            <li><a href="./room-detail.html">room type</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./review.html">Review</a>
+                    </li>
+                </ul>
         </div>
     </header>
     <section>
@@ -45,15 +66,15 @@
         <div class="slideshow-container">
             <div class="my-slides fade">
                 <img src="./assets/img/home1.jpg" alt="slide1">
-                <div class="slideshow-text"><p>hotel</p></div>
+                <div class="slideshow-text"><p>royal hotel</p></div>
             </div>
             <div class="my-slides fade">
                 <img src="./assets/img/home2.jpg" alt="slide2">
-                <div class="slideshow-text"><p>hotel</p></div>
+                <div class="slideshow-text"><p>royal hotel</p></div>
             </div>
             <div class="my-slides fade">
                 <img src="./assets/img/home3.jpg" alt="slide3">
-                <div class="slideshow-text"><p>hotel</p></div>
+                <div class="slideshow-text"><p>royal hotel</p></div>
             </div>
         </div>
         <br>
@@ -88,90 +109,132 @@
             }
         </script>
     </section>
-    <article>
-        <div class="home-content-container">
-            <div class="home-content home-content1">
-                <div>
-                    <h3><b>Welcome to Our Hotel</b></h3>
-                    <img src="./assets/img/home-content1.jpg" alt="home-content1" width="400px" height="400px" />
-                </div>
-                <div>
-                    <p>Located in the heart of the city, our hotel offers the perfect combination of luxury and
-                        convenience.
-                        Our modern rooms and amenities are designed to make your stay comfortable and memorable.</p>
-                </div>
-            </div>
-            <div class="home-content home-content2">
-                <div>
-                    <h3><b>Our Rooms</b></h3>
-                    <p>We offer a range of room options to fit your needs, from cozy standard rooms to spacious suites.
-                        All of our rooms feature modern decor and come equipped with a flat-screen TV, mini fridge, and
-                        complimentary Wi-Fi.</p>
-                </div>
-                <div>
-                    <img src="./assets/img/home-content2.jpg" alt="home-content2" width="400px" height="400px" />
-                </div>
-            </div>
-            <div class="home-content home-content3">
-                <div>
-                    <h3><b>On-Site Dining</b></h3>
-                    <img src="./assets/img/home-content3.jpg" alt="home-conten3" width="400px" height="400px" />
-                </div>
-                <div>
-                    <p>Our hotel features a restaurant and lounge that serves delicious cuisine and refreshing drinks.
-                        Start your day with a hearty breakfast, enjoy a leisurely lunch, or indulge in a decadent
-                        dinner.</p>
-                </div>
-            </div>
-            <div class="home-content home-content4">
-                <div>
-                    <h3><b>Amenities</b></h3>
-                    <ul>
-                        <li>24-hour front desk</li>
-                        <li>Fitness center</li>
-                        <li>Business center</li>
-                        <li>Outdoor pool</li>
-                        <li>Meeting and event spaces</li>
-                    </ul>
-                </div>
-                <img src="./assets/img/home-content4.jpg" alt="home-conten4" width="400px" height="400px" />
-                <div>
-                </div>
-            </div>
-            <div class="home-content home-content5">
-                <div>
-                    <h3><b>Explore the City</b></h3>
-                    <img src="./assets/img/home-content5.jpg" alt="home-content5" width="400px" height="400px" />
-                </div>
-                <div>
-                    <p>Our hotel is located in a vibrant neighborhood with plenty of restaurants, shopping, and
-                        entertainment options.
-                        We're just a short walk or ride away from popular attractions like the city's main park, museum,
-                        and theater.</p>
-                </div>
-            </div>
-            <div class="home-content home-content6">
-                <div>
-                    <h3><b>Book Your Stay</b></h3>
-                    <p>Ready to experience the luxury and convenience of our hotel? Book your stay now and enjoy special
-                        rates and promotions.
-                        We can't wait to welcome you!</p>
-                </div>
-                <div>
-                    <img src="./assets/img/home-content6.jpg" alt="home-content6" width="400px" height="400px" />
+    <article class="information-main">
+        <div class="information-container">
+            <h1>discover our hotel</h1>
+            <div class="information-slide first">
+                <div class="information-wrapper">
+                    <div class="information">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="information-image">
+                                <img src="./assets/img/home-content1.jpg" alt="information1" class="information-img">
+                            </div>
+
+                            <div class="information-content">
+                                <h2 class="title">Our Hotel</h2>
+                                <p class="description">Located in the heart of the city, our hotel offers the
+                                    perfect combination of luxury and convenience. Our modern rooms and amenities
+                                    are designed to make your stay comfortable and memorable.</p>
+                                <a href="#" class="button">view more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="information-image">
+                                <img src="./assets/img/home-content2.jpg" alt="information1" class="information-img">
+                            </div>
+
+                            <div class="information-content">
+                                <h2 class="title">Our Rooms</h2>
+                                <p class="description">We offer a range of room options to fit your needs, from cozy
+                                    standard rooms to spacious suites. All of our rooms feature modern decor and
+                                    come equipped with a flat-screen TV, mini fridge, and complimentary Wi-Fi.</p>
+                                <a href="./review.html" class="button">view more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="information-image">
+                                <img src="./assets/img/home-content3.jpg" alt="information1" class="information-img">
+                            </div>
+
+                            <div class="information-content">
+                                <h2 class="title">On-Site Dining</h2>
+                                <p class="description">Our hotel features a restaurant and lounge that serves
+                                    delicious cuisine and refreshing drinks. Start your day with a hearty breakfast,
+                                    enjoy a leisurely lunch, or indulge in a decadent dinner.</p>
+                                <a href="./restaurants.html" class="button">view more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="information-image">
+                                <img src="./assets/img/home-content4.jpg" alt="information1" class="information-img">
+                            </div>
+
+                            <div class="information-content">
+                                <h2 class="title">Amenities</h2>
+                                <p class="description des4">Our hotel provide 24-hour front desk, Fitness center,
+                                    Business center, Outdoor pool, Meeting and event spaces and etc.</p>
+                                <a href="./facility.html" class="button">view more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="information-image">
+                                <img src="./assets/img/home-content5.jpg" alt="information1" class="information-img">
+                            </div>
+
+                            <div class="information-content">
+                                <h2 class="title">Explore the City</h2>
+                                <p class="description des5">Our hotel is located in a vibrant neighborhood with plenty of
+                                    restaurants, shopping, and entertainment options. We're just a short walk or
+                                    ride away from popular attractions like the city's main park, museum, and
+                                    theater.</p>
+                                <a href="#" class="button">view more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="information">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="information-image">
+                                <img src="./assets/img/home-content6.jpg" alt="information1" class="information-img">
+                            </div>
+
+                            <div class="information-content">
+                                <h2 class="title">Book Your Stay</h2>
+                                <p class="description des6">Ready to experience the luxury and convenience of our hotel?
+                                    Book your stay now and enjoy special
+                                    rates and promotions.
+                                    We can't wait to welcome you!</p>
+                                <a href="./booking-page.html" class="button">view more</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </article>
     <footer>
         <div class="social-media">
-            <a href="https://www.facebook.com/kokseng.chua" class="facebook"><img src="./assets/img/facebook.png"
+            <a href="https://www.facebook.com/" class="facebook" target="_blank"><img src="./assets/img/facebook.png"
                     alt="facebook" width="50px" height="50px"></a>
-            <a href="https://www.instagram.com/eddie_chua0604/" class="instagram"><img src="./assets/img/instagram.png"
+            <a href="https://www.instagram.com/" class="instagram" target="_blank"><img src="./assets/img/instagram.png"
                     alt="instagram" width="50px" height="50px"></a>
-            <a href="#" class="twitter"><img src="./assets/img/twitter.png" alt="twitter" width="50px"
+            <a href="https://twitter.com/" class="twitter" target="_blank"><img src="./assets/img/twitter.png" alt="twitter" width="50px"
                     height="50px"></a>
-            <a href="#" class="youtube"><img src="./assets/img/youtube.png" alt="youtube" width="50px"
+            <a href="https://www.youtube.com/" class="youtube" target="_blank"><img src="./assets/img/youtube.png" alt="youtube" width="50px"
                     height="50px"></a>
         </div>
         <p>Please Follow Our Social Media to Get More Information in Timely</p>
